@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">LiveVideoPublishSDK</string>
-    <string name="live_indicator">On Air</string>
+    <string name="your_id">Your Live ID : </string>
+    <string name="live_indicator">LIVE</string>
     <string name="nocamera">No camera exists in your device</string>
     <string name="camera_not_running_properly">Camera is not running properly</string>
     <string name="restart">Restart</string>
