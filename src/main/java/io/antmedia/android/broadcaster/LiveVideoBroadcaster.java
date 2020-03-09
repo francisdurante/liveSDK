@@ -545,7 +545,7 @@ public class LiveVideoBroadcaster extends Service implements ILiveVideoBroadcast
             }
         });
 
-        int preferredHeight = 720;
+        int preferredWidth = 1500;
 
         choosenPreviewsSizeList = new ArrayList<>();
 
@@ -557,7 +557,7 @@ public class LiveVideoBroadcaster extends Service implements ILiveVideoBroadcast
             if ((size.width % 16 == 0) && (size.height % 16 == 0)) {
                 Resolution resolutionSize = new Resolution(size.width, size.height);
                 choosenPreviewsSizeList.add(resolutionSize);
-                int currentDiff = Math.abs(size.height - preferredHeight);
+                int currentDiff = Math.abs(size.width - preferredWidth);
                 if (currentDiff < diff) {
                     diff = currentDiff;
                     choosenSize = resolutionSize;
